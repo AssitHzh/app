@@ -1,0 +1,34 @@
+.address{
+    padding:10px;
+    position: relative;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.address image{
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+.pay_content{
+    margin:0px 30px;
+}
+.address .dw{
+    font-size: 12px;
+}
+.address image.iconArrow{
+    left:auto;
+    top:20px;
+    right: 20px;
+}
+.btn{
+  width: 100%;
+  background-color: #ccc;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  bottom: 0;
+}

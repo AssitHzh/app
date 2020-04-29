@@ -1,0 +1,27 @@
+.box{
+  padding: 10px;
+ border-bottom: 1px solid #ccc;
+}
+.title{
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+}
+.inp{
+  float: left;
+  height: 35px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.btn{
+ width: 100%;
+  background-color: #ccc;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  bottom: 0;
+}

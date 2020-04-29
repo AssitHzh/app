@@ -1,0 +1,25 @@
+<!--pages/address/address.wxml-->
+<view>
+  <view>
+    <label>
+      <view class="box cleanfix">
+        <text class="title">姓名</text>
+        <input class="inp" placeholder="收货人姓名" bindblur="name"></input>
+      </view>
+    </label>
+    <label>
+      <view class="box cleanfix">
+        <text class="title">电话</text>
+        <input class="inp" placeholder="电话号码" bindblur="phone"></input>
+      </view>
+    </label>
+    <label>
+      <view class="box cleanfix">
+        <text class="title">详细地址</text>
+        <input class="inp" placeholder="详细地址" bindblur="address"></input>
+      </view>
+    </label>
+  </view>
+</view>
+<!-- <button class="btn" bindtap="save">保存地址</button> -->
+<view class="btn" bindtap="save">保存地址</view>

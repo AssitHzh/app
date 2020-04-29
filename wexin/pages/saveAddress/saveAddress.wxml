@@ -1,0 +1,18 @@
+<!--pages/saveAddress/saveAddress.wxml-->
+<view>
+<view class="address" wx:for="{{list}}" wx:key="*this" >
+    <view class="pay_content">
+        <view class="name">
+            <text  bindtap="add" data-id="{{index}}">{{item.name}}</text>
+            <text  bindtap="add" data-id="{{index}}">{{item.phone}}</text>
+        </view>
+        <view class="dw" bindtap="add" data-id="{{index}}">
+            {{item.address}}
+        </view>
+    </view>
+    <image bindtap="del" data-id="{{index}}" src="../../image/shanchu.png" class="iconArrow"></image>
+    
+</view>
+</view>
+<!-- <button class="btn" bindtap="jump">添加地址</button> -->
+<view class="btn" bindtap="jump">添加地址</view>

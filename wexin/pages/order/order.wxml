@@ -1,0 +1,60 @@
+<!--pages/order/order.wxml-->
+<text class="text">全部订单</text>
+<view class="box">
+  <text>待支付</text>
+  <view>
+    <view class="goods_list" wx:for="{{unpaid}}" wx:key="*this">
+      <view class="left">
+        <image src="{{item.carImage}}"></image>
+      </view>
+      <view class="right">
+        <view class="goods_name">
+          <text>{{item.carName}}</text>
+        </view>
+        <view class="goods_price">
+          <text>￥{{item.carPrice}}</text>
+          <text>{{item.carNum}}件商品</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <text>已支付</text>
+  <view>
+    <view class="goods_list" wx:for="{{topay}}" wx:key="*this">
+      <view class="left">
+        <image src="{{item.carImage}}"></image>
+      </view>
+      <view class="right">
+        <view class="goods_name">
+          <text>{{item.carName}}</text>
+        </view>
+        <view class="goods_price">
+          <text>￥{{item.carPrice}}</text>
+          <text>{{item.carNum}}件商品</text>
+        </view>
+      </view>
+      <text class="complete" bindtap="com" data-id="{{index}}">完成</text>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <text>已完成</text>
+  <view>
+    <view class="goods_list" wx:for="{{completed}}" wx:key="*this">
+      <view class="left">
+        <image src="{{item.carImage}}"></image>
+      </view>
+      <view class="right">
+        <view class="goods_name">
+          <text>{{item.carName}}</text>
+        </view>
+        <view class="goods_price">
+          <text>￥{{item.carPrice}}</text>
+          <text>{{item.carNum}}件商品</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

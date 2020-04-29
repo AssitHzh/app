@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view>
+  <swiper class="img" indicator-dots="{{indicatorDots}}" indicator-active-color="white" indicator-color="black" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgs}}" wx:key="*this">
+      <swiper-item>
+        <view>
+          <image src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 分类 -->
+<view class="sort cleanfix">
+  <view class="gird" wx:for="{{classification}}" wx:key="*this">
+    <view class="gird-img">
+      <image src="{{item.src}}" bindtap="goSort" data-id="{{index}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>
+<!-- 分类 end -->
+
+<!-- 商品 -->
+<view>
+  <view class="goods" wx:for="{{goods}}" wx:key="*this">
+   <navigator url="/pages/details/details?id={{item.id}}" hover-class="none"> 
+    <view>
+      <image src="{{item.goodsImage}}"></image>
+      <text>{{item.goodsName}}</text>
+      <text>{{item.goodsPrice}}</text>
+    </view>
+    </navigator>
+  </view>
+</view>
